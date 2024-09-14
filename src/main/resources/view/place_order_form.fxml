@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="499.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Order.PlaceOrderFormController">
+   <children>
+      <Group layoutX="151.0" layoutY="76.0">
+         <children>
+            <Label fx:id="lblOrderID" layoutX="68.0" text="O001">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" text="Date :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="184.0" text="2023-09-11">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="317.0" prefHeight="17.0" prefWidth="52.0" text="Time :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="377.0" prefHeight="14.0" prefWidth="67.0" text="09:54:59">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Order ID : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <ComboBox fx:id="cmbCustomerID" layoutX="24.0" layoutY="124.0" prefWidth="150.0" promptText="Customer ID" />
+      <ComboBox fx:id="cmbItemCode" layoutX="24.0" layoutY="167.0" prefWidth="150.0" promptText="Item Code" />
+      <TextField fx:id="txtCustomerName" layoutX="198.0" layoutY="124.0" promptText="Customer Name" />
+      <TextField fx:id="txtDescription" layoutX="198.0" layoutY="167.0" promptText="Description" />
+      <TextField fx:id="txtAddress" layoutX="373.0" layoutY="124.0" promptText="Address" />
+      <TextField fx:id="txtStock" layoutX="373.0" layoutY="167.0" promptText="Stock" />
+      <TextField fx:id="txtUnitPrice" layoutX="551.0" layoutY="167.0" promptText="Unit Price" />
+      <TextField fx:id="txtQty" layoutX="420.0" layoutY="206.0" promptText="QTY" />
+      <Button layoutX="590.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" style="-fx-background-color: #f1c40f;" text="Add To Cart" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblPlaceOrder" layoutX="72.0" layoutY="238.0" prefHeight="200.0" prefWidth="602.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="85.0" text="Item Code " />
+            <TableColumn fx:id="colDescription" prefWidth="149.0" text="Description" />
+            <TableColumn fx:id="colQTY" prefWidth="108.0" text="QTY" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="138.0" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="121.0" text="Total" />
+         </columns>
+      </TableView>
+      <Button layoutX="595.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" style="-fx-background-color: #8e44ad;" text="Place Order" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009432" height="60.0" stroke="BLACK" strokeType="INSIDE" width="733.0" />
+      <Label layoutX="241.0" layoutY="10.0" prefHeight="40.0" prefWidth="265.0" text="Place Order Form" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Group layoutX="24.0" layoutY="450.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="72.0" text="Net Total :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNetTotal" layoutX="75.0" layoutY="3.0" prefHeight="20.0" prefWidth="94.0" text="0.00" textFill="#ee0606">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

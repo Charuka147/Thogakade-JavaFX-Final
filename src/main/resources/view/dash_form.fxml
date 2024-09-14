@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Button layoutX="254.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnItemFormOnAction" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #009432;" text="Item Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="254.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnCustomerFormOnAction" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #009432;" text="Customer Form" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Photo.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#130f40" height="70.0" stroke="BLACK" strokeType="INSIDE" width="436.0" />
+      <Label layoutX="100.0" layoutY="14.0" text="Gunawardhana Store" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Group layoutX="14.0" layoutY="340.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="53.0" text="Tel No : " />
+            <Label layoutX="53.0" prefHeight="17.0" prefWidth="81.0" text="011-2836314" />
+         </children>
+      </Group>
+      <Group layoutX="14.0" layoutY="369.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="53.0" text="Address : " />
+            <Label layoutX="60.0" prefHeight="17.0" prefWidth="186.0" text="No,77/5, Kandy Road, Ja-Ella" />
+         </children>
+      </Group>
+      <Button layoutX="255.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnPlaceOrderFormOnAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #009432;" text="Place Order Form" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
